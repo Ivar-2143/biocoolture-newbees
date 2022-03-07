@@ -1,0 +1,75 @@
+@import './globalStyle.scss';
+@import './variables.scss';
+
+.contents{
+    section{
+        margin: 3% 10%;
+        @include flex(column,flex-end,center);
+        .header{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .line{
+            
+            font-size: 1.3rem;
+            vertical-align: text-top;
+            margin-bottom: 2%;
+        }
+        .section-content{
+            width: 75%;
+            text-align: center;
+            font-size: 1.2rem;
+            span{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+        .card-section{
+            width: 100%;
+            .pro-con{
+                margin: 20px 0;
+                @include flex(column,none,center);
+                .header{
+
+                }
+                .cards{
+                    width: 100%;
+                    @include flex(row,space-evenly,center);
+                    .card{
+                        width: 30%;
+                        max-width: 310px;
+                        height: 250px;
+                        background-color: $lightGreen;
+                        border-radius: 5px;
+                        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
+                        .icon{
+                            margin: 5% 8%;
+                            svg{
+                                width: 48px;
+                                height: 57px;
+                                color: $white;
+                            }
+                            #waste{
+                                width: 35px;
+                                height: 57px;
+                            }
+                        }
+                        .title{
+                            margin: 0 8%;
+                            span{
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                        }
+                        .description{
+                            margin: 10% 8%;
+                        }
+                    }
+                    .mid-card{
+                        background-color: $midGreen;
+                    }
+                }
+            }
+        }
+    }
+}

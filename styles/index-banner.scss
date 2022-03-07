@@ -1,0 +1,23 @@
+@import './globalStyle.scss';
+
+.banner{
+    @include banner;
+    height: 100vh;
+    .banner-btn{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        bottom: 11%;
+        @include line-borders($white);
+        padding: 10px 25px;
+        color: $white;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 700;
+        &:hover{
+            color: $lightGreen;
+            border-color: $lightGreen;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgba($color: $midGreen, $alpha: 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contacts{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        span{
+            display: flex;
+            align-items: center;
+            margin: 0 4%;
+            svg{
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+        .email{
+            svg{
+                color: rgb(226, 76, 76);
+            }
+        }
+        .fb{
+            svg{
+                color: rgb(51, 100, 206);
+            }
+        }
+        .mobile{
+            svg{
+                color: $darkGreen;
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bioCOOLture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/hk-groteks?styles=21694,21690,21682" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/other-banner.css">
+    <link rel="stylesheet" href="./styles/contact-contents.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> -->
+<!-- <script defer src="./init-firebase.js"></script> -->
+</head>
+<body onload="init()">
+    <div class="banner">
+        <nav class="nav">
+            <div class="nav-logo"><img id="logo" src="./resources/agriCOOLture.png" alt="" srcset=""></div>
+            <div class="nav-list">
+                <a href="./index.html">Home</a>
+                <a href="./discover.html">Discover</a>
+                <a href="./contactUs.html" class="active">Contact Us</a>
+                <a href="./blog.html">Blog</a>
+                <span class="inquire-btn" onclick="init()">Inquire</span>
+            </div>
+        </nav>
+         <div class="banner-msg">
+             <div class="header">
+                <span>Keep in touch</span>
+             </div>
+             <div class="msg">
+                 <span>Feel free to contact us any time.</span>
+                 <span>We will get back to you as soon as we can.</span>
+             </div>
+         </div>
+    </div>
+    <div class="contents">
+        <div class="form">
+                <input id="fullName" type="text" placeholder="Full name"
+                name="fName">
+                <input type="email" id="emailAdd" placeholder="Email Address"name="email">
+                <input type="text" name="phoneNum" id="phoneNumber" placeholder="Phone Number">
+                <textarea name="message" placeholder="Enter your message" id="message" cols="30" rows="10"></textarea>
+                <button id="sendForm">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M27.71 4.29a1 1 0 0 0-1.05-.23l-22 8a1 1 0 0 0 0 1.87l8.59 3.43L19.59 11L21 12.41l-6.37 6.37l3.44 8.59A1 1 0 0 0 19 28a1 1 0 0 0 .92-.66l8-22a1 1 0 0 0-.21-1.05Z"/></svg>
+                    <span>Send</span>
+                </button>
+        </div>
+        <div class="details">
+            <span class="contact-header">Contact Details</span>
+            <span class="location">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21a29.776 29.776 0 0 1-3.5-3.531C6.9 15.558 5 12.712 5 10a7 7 0 0 1 11.952-4.951A6.955 6.955 0 0 1 19 10c0 2.712-1.9 5.558-3.5 7.469A29.777 29.777 0 0 1 12 21Zm0-14a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg> Philippines 
+            </span>
+            
+            <span class="contact-msg"> 
+                Connect with us
+                <span class="mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"/></svg>
+                    +6395847613524
+                </span>
+                <span class="fb">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></svg>
+                    biocoolture.ph
+                </span>
+                <span class="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"/></svg>
+                    biocoolture@email.com
+                </span>
+            </span>
+        </div>
+    </div>
+    <script>
+        let logo = document.getElementById("logo");
+        logo.classList.add('animate');
+        setTimeout(() => {
+            logo.classList.remove('animate');
+        }, 1200);
+
+    </script>
+     <!-- <script  src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
+     <script  src="https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js"></script>
+     <script  src="https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js"></script> -->
+   
+
+     <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyA1nGsvNdzsxkwv58m-319TvAlbNams2KY",
+            authDomain: "agricoolture-db.firebaseapp.com",
+            databaseURL: "https://agricoolture-db-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "agricoolture-db",
+            storageBucket: "agricoolture-db.appspot.com",
+            messagingSenderId: "225908732203",
+            appId: "1:225908732203:web:1dc3cb874d724bdc54156e"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        console.log(db);
+        let fName, email,phoneNum,message,id;
+        function prepareData(){
+            fName =document.getElementById('fullName').value;
+            email = document.getElementById('emailAdd').value;
+            phoneNum = document.getElementById('phoneNumber').value;
+            message = document.getElementById('message').value;
+            id= Math.floor((Math.random() * 100000 * Math.PI)) +80000000;
+        }
+        function reset(){
+            document.getElementById('fullName').value = "";
+            document.getElementById('emailAdd').value ="";
+            document.getElementById('phoneNumber').value="";
+            document.getElementById('message').value = "";
+        }
+        document.getElementById('sendForm').addEventListener('click',()=>{
+            prepareData();
+            console.log("working!");
+            set(ref(db,'inquiries/'+id),{
+                inquiryID:id,
+                fullName: fName,
+                emailAddress:email,
+                phoneNumber: phoneNum,
+                message: message
+            });
+            reset();
+        });
+
+        // const iForm = document.querySelector('.form');
+        // let id = id= Math.floor((Math.random() * 100000 * Math.PI)) +80000000;
+        // iForm.addEventListener('submit',(e)=>{
+        //     e.preventDefault();
+
+        //     app.database().ref('/inquiries'+id).set({
+        //         inquiryId:id,
+        //         fullName, iForm.fName.value,
+
+        //     });
+        // });
+
+      </script>
+
+      <script src="/scripts/send-contact.js">
+          
+      </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bioCOOLture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/hk-groteks?styles=21694,21690,21682" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/blog-content.css">
+    <script src="./scripts/send-contact.js"></script>
+    
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-logo"><img id="logo" src="./resources/agriCOOLture.png" alt="" srcset=""></div>
+        <div class="nav-list">
+            <a href="./index.html" class="active-blog">Home</a>
+            <a href="./discover.html" class="active-blog">Discover</a>
+            <a href="./contactUs.html" class="active-blog">Contact Us</a>
+            <a href="./blog.html" class="active active-active active-blog">Blog</a>
+            <span class="inquire-btn blog-active" onclick="inquire()">Inquire</span>
+        </div>
+    </nav>
+   
+    <div class="contents">
+        <div class="label"><span>LATEST WITH <span>bio</span>COOL<span>ture</span></span></div>
+        <div class="articles">
+            <div class="card">
+                <div class="card-banner"><div class="img"></div></div>
+                <div class="card-contents">
+                    <span class="date">Date</span>
+                    <span class="title">Coming-Soon!</span>
+                    <span>We will update here what products we are able to make from your agricultural waste! It will come soon once we've started!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-banner even-banner"><div class="img"></div></div>
+                <div class="card-contents">
+                    <span class="date">Date</span>
+                    <span class="title">Coming-Soon!</span>
+                    <span>We will update here what products we are able to make from your agricultural waste! It will come soon once we've started!</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-banner"><div class="img"></div></div>
+                <div class="card-contents">
+                    <span class="date">Date</span>
+                    <span class="title">Coming-Soon!</span>
+                    <span>We will update here what products we are able to make from your agricultural waste! It will come soon once we've started!</span>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        <div class="contacts">
+            <span class="mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"/></svg>
+                +6395847613524
+            </span>
+            <span class="fb">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></svg>
+                biocoolture.ph
+            </span>
+            <span class="email">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"/></svg>
+                biocoolture@email.com
+            </span>
+        </div>
+    </footer>
+    <script>
+        let logo = document.getElementById("logo");
+        logo.classList.add('animate');
+        setTimeout(() => {
+            logo.classList.remove('animate');
+        }, 1200);
+
+    </script>
+</body>
+</html>

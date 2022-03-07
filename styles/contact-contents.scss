@@ -1,0 +1,97 @@
+@import './globalStyle.scss';
+@import './variables.scss';
+
+.contents{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    @include flex(row,center,flex-start);
+    margin: 5% 0;
+    width: 80%;
+    .form{
+        width: 50%;
+        @include flex(column,space-around,center);
+        input, textarea{
+            width: 80%;
+            @include line-borders($black);
+            background: none;
+            padding: 10px 10px;
+            margin: 10px 0;
+            resize: none;
+        }
+        #message{
+            height: 100px;
+        }
+        button{
+            align-self: flex-start;
+            margin: 1% 10%;
+            border: none;
+            background-color: $lightGreen;
+            padding: 5px 10px;
+            cursor: pointer;
+            @include flex(row,center,center);
+            border-radius: 5px;
+            box-shadow: 0 2px 3px rgba($color: $black, $alpha: 0.4);
+            &:hover{
+                background-color: $midGreen;
+            }
+            svg{
+                width: 25px;
+                height: 25px;
+                color: $white;
+            }
+            span{
+                color: $white;
+                margin: 3px 10px;
+            }
+        }
+    }
+    .details{
+        height: 250px;
+        width: 40%; 
+        margin: 0 5%;
+        position: relative;
+        .contact-header{
+            margin: 5px 0;
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .location{
+            display: block;
+            display: flex;
+            align-items: center;
+            svg{
+                width: 35px;
+                height: 35px;
+                color: rgb(194, 32, 32);
+            }
+            font-size: 1.4rem;
+        }
+        .mobile,.email,.fb{
+            display: flex;
+            align-items: center;
+            svg{
+                width: 30px;
+                height: 30px;
+                margin: 5px 5px;
+                color: $midGreen;
+            }
+            font-size: 1.1rem;
+        }
+        .fb{
+            svg{
+                color: rgb(64, 113, 218);
+            }
+        }
+        .email{
+            svg{
+                color: rgb(226, 76, 76);
+            }
+        }
+        .contact-msg{
+            display: block;
+            margin-top: 40px;
+        }
+    }
+}

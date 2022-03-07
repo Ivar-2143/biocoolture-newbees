@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bioCOOLture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/hk-groteks?styles=21694,21690,21682" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/other-banner.css">
+    <link rel="stylesheet" href="./styles/discover-content.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/prev-next-btn.js"></script>
+    <script src="./scripts/send-contact.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <nav class="nav">
+            <div class="nav-logo"><img id="logo" src="./resources/agriCOOLture.png" alt="" srcset=""></div>
+            <div class="nav-list">
+                <a href="./index.html">Home</a>
+                <a href="./discover.html" class="active">Discover</a>
+                <a href="./contactUs.html">Contact Us</a>
+                <a href="./blog.html">Blog</a>
+                <span class="inquire-btn" onclick="inquire()">Inquire</span>
+            </div>
+        </nav>
+        <div class="banner-msg">
+            <div class="header">
+               <span>Inform-Nation</span>
+            </div>
+            <div class="msg">
+                <span>Did you know?</span>
+                <span>Your agricultural waste could turn <br>into something like these!</span>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="cards">
+            <div class="card">
+                <div class="imgs">
+                    <svg class="prev 0" onclick="prev(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+                    <svg class="next 0" onclick="next(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+                    <img src="./resources/rice husk/rice husk.jpg" alt="">
+                    <img class="side" src="./resources/rice husk/rice husk particleboard.jpg" alt="">
+                    <img class="side" src="./resources/rice husk/rice husk - insulation.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>Rice Husk</span>
+                </div>
+            </div>
+            <div class="card even-card">
+                <div class="imgs">
+                    <svg class="prev 0" onclick="prev(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+                    <svg class="next 0" onclick="next(this)"xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+                    <img src="./resources/wood waste/wood waste.jpg" alt="">
+                    <img class="side" src="./resources/wood waste/wood flakeboard for table.jpg" alt="">
+                    <img class="side" src="./resources/wood waste/corkboard.jpg" alt="">
+                    <img class="side" src="./resources/wood waste/wood MDF biocomposites.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>Wood Waste</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgs">
+                    <svg class="prev 0" onclick="prev(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+                    <svg class="next 0" onclick="next(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+                    <img src="./resources/bamboo waste/Bamboo Waste.jpg" alt="">
+                    <img class="side" src="./resources/bamboo waste/bamboo  waste - flakeboard.PNG" alt="">
+                    <img class="side" src="./resources/bamboo waste/Inorganic Bamboo Product - Cement Board.PNG" alt="">
+                    <img class="side" src="./resources/bamboo waste/Bamboo Fiber - Thermoplastics Based Biocomposites - Roofing.PNG" alt="">
+                    <img class="side" src="./resources/bamboo waste/bamboo MDF - table.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>Bamboo Waste</span>
+                </div>
+            </div>
+            <div class="card even-card">
+                <div class="imgs">
+                    <svg class="prev 0" onclick="prev(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+                    <svg class="next 0" onclick="next(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+                    <img src="./resources/bamboo waste/Bamboo Carbon.png" alt="">
+                    <img class="side" src="./resources/bamboo waste/Bamboo Carbon Product - Green Tires.png" alt="">
+                </div>
+                <div class="title">
+                    <span>Bamboo Carbon</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgs">
+                    <svg class="prev 0" onclick="prev(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+                    <svg class="next 0" onclick="next(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+                    <img src="./resources/coconut fiber/others - coconut fiber.jpg" alt="">
+                    <img class="side" src="./resources/coconut fiber/others coconut fiber - automotive accessories.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>Coconut Fiber</span>
+                </div>
+            </div>
+            <div class="card even-card">
+                <div class="imgs">
+                    <svg class="prev 0" onclick="prev(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+                    <svg class="next 0" onclick="next(this)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+                    <img src="./resources/others/others-hybrid-utensils.PNG" alt="">
+                    <img class="side" src="./resources/others/others-moulded.jpg" alt="">
+                    <img class="side" src="./resources/others/others-vessels.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>Hybrid Composites</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contacts">
+            <span class="mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"/></svg>
+                +6395847613524
+            </span>
+            <span class="fb">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></svg>
+                biocoolture.ph
+            </span>
+            <span class="email">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"/></svg>
+                biocoolture@email.com
+            </span>
+        </div>
+    </footer>
+    <script>
+        let logo = document.getElementById("logo");
+        logo.classList.add('animate');
+        setTimeout(() => {
+            logo.classList.remove('animate');
+        }, 1200);
+
+    </script>
+</body>
+</html>
